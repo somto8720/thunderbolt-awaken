@@ -1,5 +1,7 @@
 # Thunderbolt Awaken
 
+🔗 **Live Demo**: [https://tx-ledger-sigma.vercel.app](https://tx-ledger-sigma.vercel.app)
+
 A modern, open-source multi-chain transaction explorer supporting **Solana**, **Monad**, and **Base** blockchains.
 
 ![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)
@@ -7,6 +9,7 @@ A modern, open-source multi-chain transaction explorer supporting **Solana**, **
 ![Base](https://img.shields.io/badge/Base-0052FF?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)
 
 ## ✨ Features
 
