@@ -5,7 +5,7 @@ const config = CHAIN_CONFIGS.monad;
 // Note: Monad is currently testnet only. Using EVM-compatible approach.
 export async function fetchMonadTransactions(
     address: string,
-    _limit: number = 50
+    limit: number = 50
 ): Promise<Transaction[]> {
     // Validate address (EVM format)
     if (!config.addressRegex.test(address)) {
@@ -52,7 +52,7 @@ export async function fetchMonadTransactions(
         const txCountData = await txCountResponse.json();
         const txCount = parseInt(txCountData.result || '0x0', 16);
 
-        if (txCount === 0) {
+        if (txCount === 0 || limit <= 0) {
             return [];
         }
 

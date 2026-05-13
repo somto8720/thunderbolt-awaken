@@ -290,7 +290,7 @@ function App() {
                                   {truncate(tx.to)}
                                 </a>
                               ) : (
-                                <span className="text-[var(--text-muted)]">—</span>
+                                <span className="text-[var(--text-muted)]">-</span>
                               )}
                             </td>
                             <td>{tx.value > 0 ? tx.value.toFixed(6) : '—'}</td>
