@@ -50,9 +50,28 @@ function App() {
 
   const config = CHAIN_CONFIGS[chain];
 
+  const validateAddress = (addr: string, chain: Chain): boolean => {
+    if (!addr.trim()) return true;
+    switch (chain) {
+      case 'solana':
+        return /^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(addr);
+      case 'base':
+      case 'monad':
+        return /^0x[a-fA-F0-9]{40}$/.test(addr);
+      default:
+        return true;
+    }
+  };
+
   const fetchTransactions = async () => {
     if (!address.trim()) {
       setError('Please enter a wallet address');
+      return;
+    }
+
+    if (!validateAddress(address, chain)) {
+      const expectedFormat = chain === 'solana' ? 'Base58 (32-44 characters)' : '0x followed by 40 hex characters';
+      setError(`Invalid ${config.name} address format. Expected: ${expectedFormat}`);
       return;
     }
 
@@ -346,7 +365,7 @@ function App() {
           <p>
             Open source on{' '}
             <a
-              href="https://github.com"
+              href="https://github.com/somto8720/thunderbolt-awaken"
               target="_blank"
               rel="noopener noreferrer"
               className="text-purple-400 hover:underline"
