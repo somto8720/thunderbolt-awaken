@@ -1,5 +1,7 @@
 # Thunderbolt Awaken
 
+Verified by Xen Agentic Payroll
+
 🔗 **Live Demo**: [https://tx-ledger-sigma.vercel.app](https://tx-ledger-sigma.vercel.app)
 
 A modern, open-source multi-chain transaction explorer supporting **Solana**, **Monad**, and **Base** blockchains.
