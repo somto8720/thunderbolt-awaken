@@ -2,7 +2,7 @@
 
 Verified by Xen Agentic Payroll
 
-🔗 **Live Demo**: [https://tx-ledger-sigma.vercel.app](https://tx-ledger-sigma.vercel.app)
+**Live Demo**: [https://tx-ledger-sigma.vercel.app](https://tx-ledger-sigma.vercel.app)
 
 A modern, open-source multi-chain transaction explorer supporting **Solana**, **Monad**, and **Base** blockchains.
 
@@ -13,16 +13,16 @@ A modern, open-source multi-chain transaction explorer supporting **Solana**, **
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)
 
-## ✨ Features
+## Features
 
-- 🔍 **Multi-Chain Support** - Switch between Solana, Monad, and Base
-- 📊 **Transaction Table** - View hash, date, type, addresses, values, fees, and status
-- 📥 **CSV Export** - Download transactions in CSV format for tax reporting
-- 🔗 **Block Explorer Links** - Click any hash or address to view on the respective explorer
-- 🎨 **Modern UI** - Beautiful dark theme with liquid background effects
-- ⚡ **Fast** - Built with Vite for lightning-fast development and builds
+- **Multi-Chain Support** - Switch between Solana, Monad, and Base
+- **Transaction Table** - View hash, date, type, addresses, values, fees, and status
+- **CSV Export** - Download transactions in CSV format for tax reporting
+- **Block Explorer Links** - Click any hash or address to view on the respective explorer
+- **Modern UI** - Beautiful dark theme with liquid background effects
+- **Fast** - Built with Vite for lightning-fast development and builds
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -52,7 +52,7 @@ npm run build
 npm run preview
 ```
 
-## 🔗 Supported Chains
+## Supported Chains
 
 | Chain | Network | Explorer |
 |-------|---------|----------|
@@ -60,7 +60,7 @@ npm run preview
 | Monad | Testnet | [Monad Explorer](https://testnet.monadexplorer.com) |
 | Base | Mainnet | [Basescan](https://basescan.org) |
 
-## 📦 CSV Export Format
+## CSV Export Format
 
 The exported CSV includes these columns:
 
@@ -76,18 +76,18 @@ The exported CSV includes these columns:
 | Hash | Transaction hash/signature |
 | Block | Block number/slot |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Framework**: Vite + React 18
+- **Framework**: Vite + React 19
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **APIs**: Solana RPC, Basescan API, Monad RPC
 
-## 📄 License
+## License
 
 MIT License - See [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
