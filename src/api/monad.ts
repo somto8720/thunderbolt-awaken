@@ -5,7 +5,7 @@ const config = CHAIN_CONFIGS.monad;
 // Note: Monad is currently testnet only. Using EVM-compatible approach.
 export async function fetchMonadTransactions(
     address: string,
-    _limit: number = 50
+    limit: number = 50
 ): Promise<Transaction[]> {
     // Validate address (EVM format)
     if (!config.addressRegex.test(address)) {
@@ -95,7 +95,7 @@ export async function fetchMonadTransactions(
             });
         }
 
-        return transactions;
+        return transactions.slice(0, Math.min(limit, 100));
 
     } catch (error) {
         // If RPC fails, Monad testnet might be unavailable
