@@ -290,14 +290,14 @@ function App() {
                                   {truncate(tx.to)}
                                 </a>
                               ) : (
-                                <span className="text-[var(--text-muted)]">—</span>
+                                <span className="text-[var(--text-muted)]">-</span>
                               )}
                             </td>
-                            <td>{tx.value > 0 ? tx.value.toFixed(6) : '—'}</td>
-                            <td>{tx.fee > 0 ? tx.fee.toFixed(6) : '—'}</td>
+                            <td>{tx.value > 0 ? tx.value.toFixed(6) : '-'}</td>
+                            <td>{tx.fee > 0 ? tx.fee.toFixed(6) : '-'}</td>
                             <td>
                               <span className={tx.success ? 'status-success' : 'status-error'}>
-                                {tx.success ? '✓ Success' : '✗ Failed'}
+                                {tx.success ? 'Success' : 'Failed'}
                               </span>
                             </td>
                           </tr>
@@ -353,7 +353,7 @@ function App() {
             >
               GitHub
             </a>
-            {' '}• Built with React & Vite
+            {' '}- Built with React & Vite
           </p>
         </footer>
       </div>
